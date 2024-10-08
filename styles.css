@@ -1,0 +1,193 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Post Input Styles */
+#postInput {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#imageInput {
+    margin-bottom: 10px;
+}
+
+#postButton {
+    background-color: #ff6f61;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#postButton:hover {
+    background-color: #ff3d3d;
+}
+
+/* Posts Container */
+#postsContainer {
+    margin-top: 20px;
+}
+
+/* Post Styles */
+.post {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #ff6f61;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.post-content {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.location {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* Button Styles */
+.likeButton, .dislikeButton, .deletePostButton, .shareButton {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.likeButton {
+    background-color: #28a745;
+    color: white;
+}
+
+.dislikeButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+.deletePostButton, .shareButton {
+    background-color: #007bff;
+    color: white;
+}
+
+.likeButton:hover {
+    background-color: #218838;
+}
+
+.dislikeButton:hover {
+    background-color: #c82333;
+}
+
+.deletePostButton:hover, .shareButton:hover {
+    background-color: #0056b3;
+}
+
+/* Comment Section */
+.comment-section {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.commentInput {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.comment {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+.comment-user {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Emoji Picker */
+.emoji-picker {
+    display: flex;
+    margin-left: 10px;
+}
+
+.emoji {
+    font-size: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.emoji:hover {
+    transform: scale(1.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .comment-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .commentInput {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .emoji-picker {
+        margin-left: 0;
+    }
+}
